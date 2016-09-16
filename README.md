@@ -1,10 +1,10 @@
-# SpechtLite
+# SpechtLite Config
 **Forked and Revised from [HoonHwang/SpechtLiteConf](https://github.com/HoonHwang/SpechtLiteConf)**
 
 This is a template for SpechtLite designed for Chinese users.
 
 
-- **Conf.yaml**: The main configuration file, where all adapters and rules reside. You may want to copy and rename this file if you want to have several different settings to switch between.
+- **conf.yaml**: The main configuration file, where all adapters and rules reside. You may want to copy and rename this file if you want to have several different settings to switch between.
 
 - **pollutedip**: The list of DNS polluted IP addresses according to [Wikipedia](https://zh.m.wikipedia.org/zh-cn/域名服务器缓存污染).
 
