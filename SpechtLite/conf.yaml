@@ -27,12 +27,21 @@ rule:
     file: ~/.SpechtLite/pollutedip
     adapter: proxy
   - type: list
+  # Reject requests based on whether the host domain matches the given regular expressions.
+    file: ~/.SpechtLite/rejectlist
+    adapter: reject
+  - type: list
   # Forward requests based on whether the host domain matches the given regular expressions.
     file: ~/.SpechtLite/directlist
     adapter: direct
   - type: iplist
   # Forward requests based on the IP address of the host.
     file: ~/.SpechtLite/directiprange
+    adapter: direct
+  - type: country
+  # When the location is unknown. Usually this means this is resolved an Intranet IP.
+    country: CN
+    match: true
     adapter: direct
   - type: list
   # Forward requests based on whether the host domain matches the given regular expressions.
@@ -42,19 +51,10 @@ rule:
   # Forward requests based on the IP address of the host.
     file: ~/.SpechtLite/proxyiprange
     adapter: proxy
-  - type: list
-  # Reject requests based on whether the host domain matches the given regular expressions.
-    file: ~/.SpechtLite/rejectlist
-    adapter: reject
   - type: iplist
   # Reject requests based on the IP address of the host.
     file: ~/.SpechtLite/rejectiprange
     adapter: reject
-  - type: country
-  # When the location is unknown. Usually this means this is resolved an Intranet IP.
-    country: CN
-    match: true
-    adapter: direct
   - type: country
   # When the location is unknown. Usually this means this is resolved an Intranet IP.
     country: --
