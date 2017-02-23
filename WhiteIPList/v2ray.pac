@@ -2481,7 +2481,7 @@ function FindProxyForURL(url, host) {
         '93.46.8.89'      : 1
     };
 
-    var proxy = 'SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080; DIRECT';
+    var proxy = 'SOCKS5 127.0.0.1:1060; SOCKS 127.0.0.1:1060; DIRECT';
 
     function convertAddress(ipchars) {
         var bytes = ipchars.split('.');
