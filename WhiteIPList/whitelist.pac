@@ -2112,6 +2112,7 @@ function FindProxyForURL(url, host) {
         'cctv.com' : 1,
         'cctvpic.com' : 1,
         'cdn20.com' : 1,
+	'chdbits.co' : 1,
         'china.com' : 1,
         'chinabyte.com' : 1,
         'chinacache.com' : 1,
