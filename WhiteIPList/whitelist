@@ -892,8 +892,8 @@ def generate_pac(proxy):
            "PAC(Proxy auto-config) file."%(intLines, pacfile))
 
 def fetch_ip_data():
-    #fetch data from china_ip_list...
-    print("Fetching data from china_ip_list...")
+    #fetch data from https://github.com/17mon/china_ip_list
+    print("Fetching data from https://github.com/17mon/china_ip_list...")
     url=r'https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt'
     raw_data=urllib.request.urlopen(url).read().decode('utf-8')
     data = raw_data.split('\n')
