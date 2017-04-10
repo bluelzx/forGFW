@@ -755,6 +755,7 @@ def generate_pac(proxy):
         'zuchecdn.com' : 1
     };
     var dangerDomains = {
+        'amazonaws.com' : 1,
         'facebook.com' : 1,
         'fastly.net' : 1,
         'fbcdn.net' : 1,
