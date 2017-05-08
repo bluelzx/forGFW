@@ -311,7 +311,7 @@ def generate_pac(proxy):
         'haosou.com' : 1,
         'hc360.com' : 1,
         'hdarea.co' : 1,
-        'hdchina.club' : 1,
+        'hdchina.org' : 1,
         'hdsky.me' : 1,
         'hdslb.com' : 1,
         'henha.com' : 1,
